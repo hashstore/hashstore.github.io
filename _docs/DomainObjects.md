@@ -1,4 +1,8 @@
-# Definitions
+---
+layout: page
+title: Definitions
+---
+
 
 ## Enclave
 

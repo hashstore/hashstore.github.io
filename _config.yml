@@ -1,0 +1,54 @@
+title: ""
+logo: /hashstore.png
+description: Content Address Store and computation engine
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: walnutgeek
+github_username:  walnutgeek
+
+collections:
+  hashstories:
+    output: true
+
+collections:
+  hashstories:
+    permalink: "/:collection/:path/"
+    output: true
+  docs:
+    permalink: "/:collection/:path/"
+    output: true
+defaults:
+- scope:
+    path: _hashstories
+    type: hashstories
+  values:
+    layout: page
+- scope:
+    path: _docs
+    type: docs
+  values:
+    layout: page
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+header_pages:
+  - index.md
+  - hashstories.md
+  - docs.md
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

@@ -1,3 +1,8 @@
+---
+story_num: 1
+title: Powerful Reptile
+---
+
 # Powerful Reptile
 
 This powerful reptile is called Python. It lives [](http://python.org). You may already have it on your computer but if you dont it is easy to get it. 
@@ -16,14 +21,14 @@ $ python
 Python 3.7.0 (default, Jun 28 2018, 07:39:16) 
 [Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
 Type "help", "copyright", "credits" or "license" for more information.
->>> 
+>>>  
 ```
 
 You just run python in REPL (read-eval-print loop) mode. It is when python wait from you one command at the time (read), executes it (eval), print result and repeat.
 
 How can I exit from that loop you may ask. You just simply call command `quit()` and you out.
 
->>> Shortcut: On windows you can use: Ctrl+Z then ENTER. On unix based computer Ctrl+D will take you out of loop.
+>>> Shortcut: To exit on windows you can use: Ctrl+Z then ENTER . On unix Ctrl+D will take you out of the loop.
 
 ## Calculator
 

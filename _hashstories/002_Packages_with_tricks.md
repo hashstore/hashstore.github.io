@@ -1,3 +1,8 @@
+---
+story_num: 2
+title: Packages with tricks
+---
+
 ## Explore packages with tricks
 
 Let's say we have text with same mistake repeated multiple times, and we want to fix it in one go. Somebody suggessted to use `re.sub`.
