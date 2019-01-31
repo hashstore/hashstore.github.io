@@ -6,13 +6,26 @@ title: Definitions
 
 ## Enclave
 
-* identified by permacake with ENCLAVE CakeType
-* has Logic and may assign list of CodeVersions
-* has designated hosts to run Enclave with desiganted leader
-* has set ot rules that define event routing to tasks
-* maintain event log and storage log
-* can subscribe external events from other enclaves
-* users can be members of enclave and have varies roles and premissions
+Identified by permacake with ENCLAVE CakeType, and made of :
+
+### EnclaveConvig
+
+* Logics available, current versions, labels, deterinistic  and non-deterministic methods invocation rules (!!! too complex)
+* host list and designated leader
+* event subscriptions from other enclaves
+* rules that define event routing to task
+* users-members of enclave and teir roles and premissions
+
+### EnclaveState
+
+Encalve state maintianed by designated host leader
+
+* subscription state
+* task execution state
+* schedule state
+* event log 
+* storage log
+
 
 ## Logic  
 
