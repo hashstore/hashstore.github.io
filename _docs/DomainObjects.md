@@ -23,13 +23,12 @@ Encalve state maintianed by designated host leader
 * subscription state
 * task execution state
 * schedule state
-* event log 
+* event log
 * storage log
-
 
 ## Logic  
 
-  represent stream of `CoveVersion`'s
+represent CakeStream of `CoveVersion`'s
 
 ## Code
   
@@ -41,29 +40,39 @@ Content Address KEy. Cake have role and type.
 
 ### CakeType
 type define what object cake refers to:
-   * INLINE: small piece of data that embeded in cake
-   * SHA256: refers to blob with that hash
-   * PORTAL: premacake that refer CakeStream
-   * VTREE: permacake refers VTree
-   * DMOUNT: permacake refers DMount specific to host and path
 
-### CakeRole 
+* INLINE: small piece of data that embeded in cake (size is less 33 bytes)
+* SHA256: refers to blob with that hash (ContentCake)
+* PORTAL: premacake that refer CakeStream
+* VTREE: permacake refers VTree
+* DMOUNT: permacake refers DMount specific to host and path
 
+### CakeRole
 could be either:
 
 * synapse - Cake points on leaf blob
 * or neiron - Cake points to blob that contain merkle tree node (like: CakeRack)
 
-## CakeRack
 
-simpliest neiron structure where list of names corespond with equally sized list of cakes. names sorted alphabetically.
+## InlineCake
+date embeded in cake
+
+## ContentCake
+content key of blob
+
 
 ## Permacake (AKA Portal)
 Randomly generated content id that stays permanent even so content assocciated with it changes over time.
 
+## CakeRack
+
+Simpliest neiron structure where list of names corespond with equally sized list of ca`Cakes`s. Names sorted alphabetically. Names could be optional, in that case `Cake`s itself assumed to be names and sorted accordingly. Optionaly `CakeRack` could include: cakes, create_time, size list 
+
+
 ## CakeStream
 
-sequence of blobs possible agregated identified by permacake
+Sequence of `Cake`'s identified by permacake. `Cake` records organized by time, additionaly you can apply symbolic  labels on particular `Cake`s in the stream.
+
 
 ## VTree
 

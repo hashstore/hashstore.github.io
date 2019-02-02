@@ -5,7 +5,7 @@ title: Powerful Reptile
 
 # Powerful Reptile
 
-This powerful reptile is called Python. It lives [](http://python.org). You may already have it on your computer but if you dont it is easy to get it. 
+This powerful reptile is called Python. It lives [python.org](http://python.org). You may already have it on your computer but if you dont it is easy to get it. 
 
 ## Why it is so powerful
 
@@ -13,8 +13,7 @@ Anybody can use python because it free. It is easy to teach computer new tricks 
 
 ## Let's try it
 
-
-Call python. If you see something like bellow you have python installed, (TODO install instructions ...)
+Call python. If you see something like bellow you have python installed:
 
 ```python
 $ python
@@ -23,6 +22,8 @@ Python 3.7.0 (default, Jun 28 2018, 07:39:16)
 Type "help", "copyright", "credits" or "license" for more information.
 >>>  
 ```
+
+In the series we assume python 3.6+, so if you see earlier version on your computer please refer to [python.org](http://python.org) to install newer version.
 
 You just run python in REPL (read-eval-print loop) mode. It is when python wait from you one command at the time (read), executes it (eval), print result and repeat.
 
@@ -66,7 +67,8 @@ Command `dir()` allow us to see what we have in local context:
 
 ```python
 >>> dir()
-['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 's', 'x']
+['__annotations__', '__builtins__', '__doc__', '__loader__', '__name__', 
+ '__package__', '__spec__', 's', 'x']
 >>>
 ```
 
