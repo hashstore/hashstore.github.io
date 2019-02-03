@@ -3,7 +3,7 @@ story_num: 2
 title: Packages with tricks
 ---
 
-## Explore packages with tricks
+# Explore packages with tricks
 
 Let's say we have text with same mistake repeated multiple times. We want to find all occurences of mistake and replace it with correct fragment.  Somebody suggessted to use to check `re` module.
 
@@ -83,7 +83,7 @@ sub(pattern, repl, string, count=0, flags=0)
 (END)
 ```
 
-### Put it to the test
+## Put it to the test
 
 Lets create some text and lets play with `re.sub()` to make sure we undestood documentaion:
 
@@ -131,7 +131,7 @@ deep well.
 
 ```
 
-### Batteries Included
+## Batteries Included
 
 Python come with very rich standart library, and all that functionalty just one `import` away. You can do a lot with just  standart library without need to install any external packages.
 
@@ -170,8 +170,4 @@ And bit of humor:
 
 ![python antigravity](https://imgs.xkcd.com/comics/python.png)
 
-Beyound standart library, you can easy install amazing number of community supported modules from [Python Package Index - pypi.org](https://pypi.org). All you need is to find package , that you want to install and type `python -m pip install <package_name>`.
-
-
-
-
+Beyound standart library you can easy install extraodianry number of community supported packages from [Python Package Index - pypi.org](https://pypi.org). All you need is to find package, and type `python -m pip install <package_name>` in shell.
